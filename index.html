@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment - Moe Azizi</title>
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="excel.html">Excel</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <form id="main-form" name="mainform">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+
+                    <div>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" maxlength="50" name="email" placeholder="info@example.com">
+                    </div>
+                    <div>
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label for="province">Province:</label>
+                        <input type="text" name="province" id="province">
+                    </div>
+
+                    <div>
+                        <br>
+                        Membership:
+                        <br>
+                        <input type="radio" name="member" checked value="Premium" id="pm">
+                        <label for="pm">Premium Membership</label>
+                        <br>
+                        <input type="radio" name="member" value="Standard" id="sm">
+                        <label for="sm">Standard Membership</label>
+                        <br>
+                        <input type="radio" name="member" value="Basic" id="bm">
+                        <label for="bm">Basic Membership</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="Submit" value="Send" id="send" onclick="userForm(); return false">
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+            <div id="output">
+                Full Name: <span id="fullname"></span>
+                <br>
+                Email: <span id="email-address"></span>
+                <br>
+                Address: <span id="addr"></span>
+                <br>
+                Membership: <span id="mship"></span>
+            </div>
+        </main>
+        <footer>
+            <p>Canadian Business College - JavaScript Main Assignment - Moe Azizi</p>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>

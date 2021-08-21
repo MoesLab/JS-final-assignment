@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment - Moe Azizi</title>
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="excel.html">Excel</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <form id="main-form" name="mainform">
+                <fieldset>
+                    <legend>Excel Function</legend>
+                    <div>
+                        <label for="numbers">Enter your numbers separated by spaces: </label>
+                        <input type="text" name="nums" id="numbers">
+                    </div>
+
+                    <div>
+                        <br>
+                        <label>Select a function for inputed numbers:</label>
+                        <br>
+                        <input type="radio" name="function" checked value="AutoSum" id="autosum">
+                        <label for="autosum">AutoSum</label>
+                        <br>
+                        <input type="radio" name="function" value="Average" id="average">
+                        <label for="average">Average</label>
+                        <br>
+                        <input type="radio" name="function" value="Max" id="max">
+                        <label for="max">Max</label>
+                        <br>
+                        <input type="radio" name="function" value="Min" id="min">
+                        <label for="min">Min</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Calculate" onclick="myExcelFuns(); return false">
+                    <input type="reset" value="Clear Numbers">
+                </div>
+            </form>
+            <div id="output">
+                <br>
+                Result: <span id="result"></span>
+                <br>
+                <br>
+            </div>
+
+        </main>
+        <footer>
+            <p>Canadian Business College - JavaScript Main Assignment - Moe Azizi</p>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
